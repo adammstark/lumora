@@ -80,18 +80,14 @@ text:'{{ session("error") }}'
 @endif
 
 {{-- VALIDASI --}}
-@if($errors->any())
+@if(isset($errors) && $errors->any())
 <script>
-document.addEventListener("DOMContentLoaded",()=>{
-
-Swal.fire({
-
-icon:'warning',
-title:'Data Tidak Valid',
-text:'{{ $errors->first() }}'
-
-});
-
+document.addEventListener("DOMContentLoaded", function () {
+    Swal.fire({
+        icon: 'warning',
+        title: 'Data Tidak Valid',
+        text: '{{ $errors->first() }}'
+    });
 });
 </script>
 @endif
