@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lumora Hotel</title>
 
-    <link rel="stylesheet" href="{{ asset('css/reservation.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/Reservation.css') }}">
     <link rel="stylesheet" href="{{ asset('css/Rooms.css') }}">
     <link rel="stylesheet" href="{{ asset('css/Facilities.css') }}">
     <link rel="stylesheet" href="{{ asset('css/Contact.css') }}">
