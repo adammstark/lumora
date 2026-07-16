@@ -161,39 +161,64 @@ Swal.fire({
 
                 <div class="booking-form">
 
-                    <div class="input-group">
-                        <label>Check-in</label>
-                        <input
-                            type="date"
-                            name="checkin"
-                            required>
-                    </div>
+    <div class="input-group">
+        <label>Nama Lengkap</label>
+        <input type="text"
+               name="customer_name"
+               placeholder="Masukkan nama lengkap"
+               required>
+    </div>
 
-                    <div class="input-group">
-                        <label>Check-out</label>
-                        <input
-                            type="date"
-                            name="checkout"
-                            required>
-                    </div>
+    <div class="input-group">
+        <label>Email</label>
+        <input type="email"
+               name="customer_email"
+               placeholder="Masukkan email"
+               required>
+    </div>
 
-                    <div class="input-group">
+    <div class="input-group">
+        <label>No. HP</label>
+        <input type="text"
+               name="customer_phone"
+               placeholder="08xxxxxxxxxx"
+               required>
+    </div>
 
-                        <label>Jumlah Tamu</label>
+    <div class="input-group">
+        <label>Alamat</label>
+        <textarea
+            name="customer_address"
+            placeholder="Masukkan alamat"
+            required></textarea>
+    </div>
 
-                        <select
-                            name="guest"
-                            required>
+    <div class="input-group">
+        <label>Check-in</label>
+        <input type="date"
+               name="checkin"
+               required>
+    </div>
 
-                            <option value="">Pilih Tamu</option>
-                            <option value="1">1 Tamu</option>
-                            <option value="2">2 Tamu</option>
+    <div class="input-group">
+        <label>Check-out</label>
+        <input type="date"
+               name="checkout"
+               required>
+    </div>
 
-                        </select>
+    <div class="input-group">
+        <label>Jumlah Tamu</label>
 
-                    </div>
+        <select name="guest" required>
+            <option value="">Pilih Tamu</option>
+            <option value="1">1 Tamu</option>
+            <option value="2">2 Tamu</option>
+        </select>
 
-                </div>
+    </div>
+
+</div>
 
                 <button
                     type="submit"
